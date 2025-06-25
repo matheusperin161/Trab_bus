@@ -10,7 +10,8 @@ import LogoSenha from "../../assets/logosenha.png";
 import LogoEmail from "../../assets/logo email.png";
 import OlhoC from "../../assets/olhoc.png";
 
-export default function Login() {
+export default function Login({ navigation }: any) {
+
   return (
     <ImageBackground
       source={ImagemLogin}
@@ -29,9 +30,13 @@ export default function Login() {
       <View style={style.boxBottom}>
         <TextInput placeholder="Endereço de email" />
         <TextInput placeholder="Senha" secureTextEntry />
-        <TouchableOpacity style={style.linkContainer}>
-          <Text style={style.link}>Esqueceu sua senha?</Text>
+      <TouchableOpacity
+  style={style.linkContainer}
+  onPress={() => navigation.navigate('NovaSenha')}
+>
+  <Text style={style.link}>Esqueceu sua senha?</Text>
         </TouchableOpacity>
+
       </View>
     </ImageBackground>
   );
