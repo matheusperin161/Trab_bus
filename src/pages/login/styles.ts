@@ -12,7 +12,6 @@ export const style = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-
   boxTop2: {
     height: 200,
     width: "100%",
@@ -26,7 +25,6 @@ export const style = StyleSheet.create({
     justifyContent: "center",
     marginTop: 30,
   },
-
   boxMidText: {
     fontSize: 32,
     fontFamily: "Inter-Regular",
@@ -34,15 +32,24 @@ export const style = StyleSheet.create({
     fontWeight: "700",
     textAlign: "center",
   },
-
   boxBottom: {
     width: "100%",
     alignItems: "center",
     justifyContent: "center",
     borderWidth: 1,
-    height: 70,
+    height: "auto",
     borderRadius: 20,
-    backgroundColor: "#fffff",
+    backgroundColor: "#ffffff",
     padding: 10,
+  },
+  linkContainer: {
+    marginTop: 10, // Adiciona espaço acima do link
+    alignSelf: "flex-end", // Alinha à direita
+    width: "100%", // Garante que ocupe a largura total do container
+  },
+  link: {
+    color: "#000",
+    fontWeight: "bold",
+    alignSelf: "flex-end",
   },
 });

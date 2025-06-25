@@ -1,5 +1,6 @@
 import React from "react";
 import { Text, View, Image, TextInput, ImageBackground } from "react-native";
+import { TouchableOpacity } from "react-native";
 
 import { style } from "./styles";
 
@@ -23,14 +24,14 @@ export default function Login() {
       <View style={style.boxTop2}></View>
 
       <View style={style.boxMid}>
-        <Text style={style.boxMidText}> Entre ou {"\n"} cadastre-se</Text>
+        <Text style={style.boxMidText}>Entre ou {"\n"} cadastre-se</Text>
       </View>
       <View style={style.boxBottom}>
         <TextInput placeholder="Endereço de email" />
-
         <TextInput placeholder="Senha" secureTextEntry />
-
-        <Text> Esqueceu sua senha?</Text>
+        <TouchableOpacity style={style.linkContainer}>
+          <Text style={style.link}>Esqueceu sua senha?</Text>
+        </TouchableOpacity>
       </View>
     </ImageBackground>
   );
