@@ -5,7 +5,9 @@ import { TouchableOpacity } from "react-native";
 import { style } from "./styles";
 
 import ImagemLogin from "../../assets/imagemlogin.png";
-import Logo from "../../assets/logo.png";
+// import Logo from "../../../../assets/logo.png";
+
+
 import LogoSenha from "../../assets/logosenha.png";
 import LogoEmail from "../../assets/logo email.png";
 import OlhoC from "../../assets/olhoc.png";
@@ -19,7 +21,7 @@ export default function Login({ navigation }: any) {
       resizeMode="cover"
     >
       <View style={style.boxTop}>
-        <Image source={Logo} />
+        {/* <Image source={Logo} /> */}
       </View>
 
       <View style={style.boxTop2}></View>

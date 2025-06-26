@@ -9,7 +9,7 @@ import {
   SafeAreaView,
 } from "react-native";
 import { style } from "./styles";
-import Logo from "../../assets/logo.png";
+import Logo from "../../../assets/logo.png";
 import { MaterialIcons } from "@expo/vector-icons";
 import { themas } from "../../../global/themes";
 
